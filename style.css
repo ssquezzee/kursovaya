@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'Ba';
+    src: url(./fonts/baloo-cyrillic.ttf);
+}
+
+@font-face {
+    font-family: 'Co';
+    src: url(./fonts/Comfortaa.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: #F2E0BA;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;  
+}
+
+header{
+    background-color: #F2E0BA;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+header .container .razdel .razdel-click{
+    font-family: 'Ba';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .container .razdel a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #DCB45E;
+    transition: .5s;
+}
+
+header .container .razdel a:hover{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #3F2C03;
+    border-bottom: #3F2C03 2px solid;
+    transition: .3s;
+}
+
+header .container{
+    height: 60px;
+    padding: 40px;
+    border-bottom: #3F2C03 2px solid;
+}
+
+.section-name{
+    margin-top: 50px;
+    background-color: #F2E0BA;
+}
+
+.section-name .container h1{ 
+    display: flex;
+    justify-content: center;
+    font-family: 'Ba';
+    font-size: 70px;
+    color: #3F2C03;
+}
+
+.section-name .container h2 { 
+    display: flex;
+    justify-content: center;
+    font-family: 'Ba';
+    font-size: 120px;
+    color: #DCB45E;
+    margin-top: -50px;
+}
+
+.about{
+    background-color: #3F2C03;
+    width: 100%;
+}
+
+.col-12 h2{
+    font-family: 'Ba';
+    font-size: 40px;
+    color: #DCB45E;
+    margin-top: 50px;
+}
+
+.about .container .row .col-xl-6{
+    font-family: 'Co';
+    font-size: 20px;
+    color: #F2E0BA;
+    margin-bottom: 20px;
+}
+
+.row h5{
+    font-family: 'Co';
+    font-size: 20px;
+    color: #F2E0BA;
+
+}
+.row h4{
+    font-family: 'Ba';
+    font-size: 36px;
+    color: #DCB45E;
+    margin-bottom: 10px;    
+}
+
+.row .col-xl-6{
+    margin-bottom: 70px;
+}
+
+.about .container .row .col-xl-6 img{
+    width: 70%;
+    margin-bottom: 80px;
+}
+
+.eda{
+    background-color: #3F2C03;
+}
+
+.eda .container .btn button {
+    width: 250px;
+    height: 60px;
+    border: 3px solid #DCB45E;
+    font-family:'Ba';
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #F2E0BA;
+    color: #3F2C03;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    transition: .3s;
+}
+
+.eda .container .btn button:hover {
+    color: #F2E0BA;
+    border: 3px solid #DCB45E; /* Параметры рамки */
+    background:#3F2C03; /* Цвет фона */
+    font-size: 22px; /* Размер текста */
+    padding: 5px 20px;
+    transition: .4s;
+}
+
+.eda .container .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    background-color: #3F2C03;
+    border-bottom: #F2E0BA 2px solid;
+}
+
+.contact .col-xl-6{
+    font-family: 'Co';
+    font-size: 16px;
+    color: #F2E0BA;
+    margin-bottom: 60px;
+}
+
+.contact h3{
+    font-family: 'Ba';
+    font-size: 30px;
+    color: #DCB45E;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: #3F2C03;
+}
+
+footer h3{
+    font-family: 'Ba';
+    font-size: 14px;
+    color: #DCB45E;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .section-name h1{
+        font-size: 40px !important;
+    }
+
+    .section-name h2{
+        font-size: 80px !important;
+    }
+
+    .carousel-item{
+        height: 400px !important;
+    }
+
+    .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        height: 100% !important;
+    }
+  
+}
+
+@media (max-width: 576px) {
+    header .container .logotype img{
+        width: 84px;
+        height: 15px;
+    }
+    header .container .razdel .razdel-click{
+        font-size: 12px;
+    }
+    header .container .razdel .razdel-click:nth-child(1){
+        margin-left: 0;
+    }
+    header .container .razdel .razdel-click:nth-child(4){
+        margin-right: 0 !important;
+    }
+    header .container{
+        margin-bottom: 50px;
+    }
+    .carousel-item{
+        height: 300px !important;
+      }
+      .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        height: 100% !important;
+      }
+
+    .section-name h1{
+        font-size: 40px !important;
+    }
+
+    .section-name h2{
+        font-size: 60px !important;
+        margin-top: 1px !important;
+    }
+
+    .about .container .row .col-xl-6{
+        font-size: 16px !important;
+    }
+
+    .about .container .row .col-xl-6 img{
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .eda .container .btn button {
+        width: 190px;
+        height: 40px;
+        border: 3px solid #DCB45E;
+        font-family:'Ba';
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 12px;
+        background-color: #F2E0BA;
+        color: #3F2C03;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        transition: .3s;
+    }
+    
+    .eda .container .btn button:hover {
+        color: #F2E0BA;
+        border: 3px solid #DCB45E; /* Параметры рамки */
+        background:#3F2C03; /* Цвет фона */
+        font-size: 18px; /* Размер текста */
+        padding: 5px 20px;
+        transition: .4s;
+    }
+}
+
+@media (max-width: 320px) {
+
+
+
+    .carousel-item{
+        height: 100px !important;
+      }
+      .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        height: 100% !important;
+      }
+
+      .section-name h1{
+        font-size: 30px !important;
+    }
+
+    .section-name h2{
+        font-size: 40px !important;
+        margin-top: 2px !important;
+    }
+
+    header .container .razdel .razdel-click:nth-child(1){
+        margin-left: 0;
+    }
+
+    header .container .razdel .razdel-click:nth-child(2){
+        margin-right: 0 !important;
+    }
+
+    .col-12 h2{
+        font-size: 30px;
+    }
+
+    .row h4{
+        font-size: 30px;
+    }
+
+    .row h5 {
+        font-size: 16px;
+    }
+}

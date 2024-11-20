@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Ba';
+    src: url(./fonts/baloo-cyrillic.ttf);
+}
+
+@font-face {
+    font-family: 'Co';
+    src: url(./fonts/Comfortaa.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #F2E0BA;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: #3F2C03 2px solid;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header .ru {
+    display: flex;
+}
+
+header .logo h2,a {
+    font-family: 'Ba';
+    color: #3F2C03;
+    font-size: 40px;
+}
+
+header .found button {
+    font-family: 'Ba';
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #3F2C03;
+    color: #F2E0BA;
+    border: #3F2C03 2px solid;
+    transition: .3s;
+}
+
+header .found button:hover {
+    font-family: 'Ba';
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #F2E0BA;
+    color: #3F2C03;
+    border: #3F2C03 2px solid;
+    transition: .3s;
+}
+
+.zakaz {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.zakaz .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.zakaz .row {
+    margin-top: 20px;
+}
+
+.zakaz .btn {
+    width: 220px;
+    height: 50px;
+    border: 3px solid #DCB45E;
+    font-family: 'Ba';
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #F2E0BA;
+    color: #3F2C03;
+    transition: .3s;
+}
+
+.zakaz .btn:hover {
+    color: #F2E0BA;
+    border: 3px solid #DCB45E;
+    /* Параметры рамки */
+    background: #3F2C03;
+    /* Цвет фона */
+    font-size: 18px;
+    /* Размер текста */
+    padding: 5px 20px;
+    transition: .4s;
+}
+
+.zakaz .row .card-body {
+    background-color: #F2E0BA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zakaz .row .card {
+    border: #F2E0BA 1px solid;
+}
+
+.zakaz .row .card-body h5 {
+    font-family: 'Ba';
+    color: #3F2C03;
+    font-size: 18px;
+}
+
+.zakaz .row .card-body .card-text {
+    font-family: 'Ba';
+    color: #3F2C03;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #3F2C03;
+}
+
+footer .logo img {
+    margin-top: 50px;
+}
+
+footer .title {
+    font-family: 'Ba';
+    color: #F2E0BA;
+    font-size: 24px;
+}
+
+footer .text {
+    font-family: 'Ba';
+    color: #DCB45E;
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .text {
+        font-size: 18px;
+    }
+
+    header .container{
+        flex-direction: column;
+    }
+
+    header .logo h2 {
+        font-family: 'Ba';
+        color: #3F2C03;
+        font-size: 20px;
+    }
+
+    header .ru {
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    footer .text {
+        font-size: 18px;
+    }
+
+    header .container{
+        flex-direction: column;
+    }
+
+    header .logo h2 {
+        font-family: 'Ba';
+        color: #3F2C03;
+        font-size: 26px;
+    }
+}
